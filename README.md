@@ -25,7 +25,8 @@ Require using wordpress plugin.
 
 | Plugin | Download |
 | ------ | ------ |
-| comment-rating | [https://rezahajizade.com/drive/comment-rating.zip] |
+| File | [https://rezahajizade.com/drive/comment-rating.zip] |
+| Github | [https://github.com/rezaplus/Comment-Rating-wordpress-plugin] |
 
 #### Plugin setting
 
