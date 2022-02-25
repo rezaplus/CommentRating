@@ -16,6 +16,9 @@ Route::post('/api','rezaplus\cmr\Http\Controllers\ApiController@insert');
  */
 Route::get('/posts', function () {
     $posts = DB::select('select * from wp_posts ORDER BY post_rate DESC');
+    if(empty($posts)){
+        return 'There is no Post';
+    }
     return view('cmr::posts', compact('posts'));
 });
 
@@ -25,5 +28,8 @@ Route::get('/posts', function () {
  */
 Route::get('/posts/comments/', function () {
     $comments = DB::select("select * from wp_comments where post_id=".$_GET['post']." ORDER BY rate DESC");
+        if(empty($posts)){
+        return 'There is no Comment';
+    }
     return view('cmr::comments', compact('comments'));
 });
