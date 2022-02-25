@@ -28,7 +28,7 @@ Route::get('/posts', function () {
  */
 Route::get('/posts/comments/', function () {
     $comments = DB::select("select * from wp_comments where post_id=".$_GET['post']." ORDER BY rate DESC");
-        if(empty($posts)){
+    if(empty($comments)){
         return 'There is no Comment';
     }
     return view('cmr::comments', compact('comments'));
