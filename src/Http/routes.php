@@ -19,7 +19,7 @@ Route::get('/posts', function () {
     if(empty($posts)){
         return 'There is no Post';
     }
-    return view('cmr::posts', compact('posts'));
+    return view('cmr::Posts', compact('posts'));
 });
 
 /**
@@ -31,5 +31,5 @@ Route::get('/posts/comments/', function () {
     if(empty($comments)){
         return 'There is no Comment';
     }
-    return view('cmr::comments', compact('comments'));
+    return view('cmr::Comments', compact('comments'));
 });
