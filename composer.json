@@ -1,0 +1,28 @@
+{
+    "name": "rezaplus/cmr",
+    "description": "only for test",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "reza hajizade",
+            "email": "info@rezahajizade.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "rezaplus\\cmr\\" : "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^8.0",
+        "illuminate/support" : "^5.2|^6|^7|^8"
+    },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "rezaplus\\cmr\\CmrServiceProvider"
+        ]
+    }
+}
+}
